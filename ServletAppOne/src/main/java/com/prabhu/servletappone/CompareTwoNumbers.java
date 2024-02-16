@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CompareTwoNumbers extends HttpServlet {
 
-	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		
 		int number1 = Integer.parseInt(req.getParameter("number1"));
 		int number2 = Integer.parseInt(req.getParameter("number2"));
