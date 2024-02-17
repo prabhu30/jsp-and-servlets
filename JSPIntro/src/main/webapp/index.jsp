@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		
-		<%-- Declarative --%>
+		<%-- Declaration --%>
 		<%-- (to declare variables/methods outside service() method when converted to servlet --%>
 		<%!
 			String sumOfNumbersText = "Sum of numbers";
