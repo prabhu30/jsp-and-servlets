@@ -23,15 +23,18 @@
 			<br><br>
 		</core:forEach>
 		
+		<%-- Add password in the below setDataSource configuration in order to display sql results
 		<h1>SQL Tag Library</h1>
 		<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/prabhudb" user="root" password="**************"/>
 		
 		<sql:query var="rs" dataSource="${db}">select * from movies</sql:query>
 		
+		
 		<core:forEach items="${rs.rows}" var="movie">
 			<core:out value="${movie.id}"></core:out> | <core:out value="${movie.name}"></core:out> | <core:out value="${movie.rating}"></core:out>
 			<br>
 		</core:forEach>
+		--%>
 		
 		<h1>Functions Tag Library</h1>
 		<core:set var="str" value="Prabhu Kalyan is a god gifted child"></core:set>
