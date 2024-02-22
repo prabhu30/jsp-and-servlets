@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Super Career</title>
+</head>
+<body>
+
+	<form action="Login" method="POST">
+		
+		<br> <label for="password">Enter Username : </label>
+		<input type="text" name="username" id="username" placeholder="username">
+
+		<br><br>
+		<label for="password">Enter Password : </label>
+		<input type="password" name="password" id="password" placeholder="password" autocomplete="off">
+		
+		<br><br>
+		<input type="submit" value="LOGIN">
+		
+	</form>
+
+</body>
+</html>

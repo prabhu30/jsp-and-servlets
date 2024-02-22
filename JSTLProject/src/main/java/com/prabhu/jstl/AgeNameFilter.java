@@ -12,9 +12,9 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
 @WebFilter("/demoservlet")
-public class ageFilter implements Filter {
+public class AgeNameFilter implements Filter {
 
-    public ageFilter() {}
+    public AgeNameFilter() {}
 
 	public void destroy() {
 	}
@@ -25,7 +25,7 @@ public class ageFilter implements Filter {
 		int age = Integer.parseInt(req.getParameter("age"));
 		String name = req.getParameter("name");
 		
-		if (age > 18 && name.length() > 1) {			
+		if (age >= 18 && name.length() > 1) {			
 			chain.doFilter(request, response);
 		} else {
 			response.getWriter().print("Invalid Input. Age must be greater than 18 and name should be meaningful.");
